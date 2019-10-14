@@ -1,0 +1,460 @@
+/* animationer text */
+/*****START*******/
+/*****section***/
+/***BOX***/
+.animation-box {
+    width: 75%;
+    height: 27.5rem;
+
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/****ANIMATIONER****/
+
+
+@-webkit-keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes bottomFadeOut {
+    0% {
+        position: absolute;
+        bottom: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        bottom: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes bottomFadeOut {
+    0% {
+        position: absolute;
+        bottom: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        bottom: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@-webkit-keyframes topFadeOutVertical {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 45%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topFadeOutVertical {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 45%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes rightFadeInOut {
+    0% {
+        position: absolute;
+        right: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        right: 10rem;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        right: 10rem;
+    }
+}
+
+@keyframes rightFadeInOut {
+    0% {
+        position: absolute;
+        right: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        right: 10rem;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        right: 10rem;
+    }
+}
+
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/*****FADEINTXT****/
+
+.first-text {
+    font-size: 2rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    -webkit-animation-name: topFadeOut;
+    animation-name: topFadeOut;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    color: #ccc;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+.second-text {
+    font-size: 2rem;
+    position: absolute;
+    top: 8.5rem;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-animation-name: rightFadeInOut;
+    animation-name: rightFadeInOut;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    color: #ccc;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+.third-text {
+
+    font-size: 2rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    opacity: 0;
+    -webkit-animation-name: topFadeOutVertical;
+    animation-name: topFadeOutVertical;
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    color: #ccc;
+    white-space: nowrap;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+.fourth-text {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: #00E701;
+
+    -webkit-animation-name: fadeInOut;
+    animation-name: fadeInOut;
+    -webkit-animation-delay: 13s;
+    animation-delay: 13s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+.fifth-text {
+    font-size: 5rem;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: #ccc;
+    -webkit-animation-name: bottomFadeOut;
+    animation-name: bottomFadeOut;
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+
+
+/*****SLUT*******/
+
+
+/****LOGO***/
+
+.animated {
+    background-image: url(imgs/Asset%202.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 400px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+    font-family: 'safety-DemiBold', sans-serif;
+}
+
+.animated2 {
+
+
+    background-position: center;
+    padding-top: 125px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 26s;
+    animation-delay: 26s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+}
+
+.animated3 {
+
+
+    background-position: center;
+    padding-top: 125px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 28s;
+    animation-delay: 28s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/****LOGOSLUT***/
+/****#optildig txt***/
+
+.optildig {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: 158px;
+    bottom: 660px;
+    font-size: 1.5rem;
+    color: #00E701;
+    text-transform: lowercase;
+    font-weight: 800;
+    transform: scale(1.2);
+    font-family: 'safety-Light', sans-serif;
+
+}
+
+/******sometxt*****/
+
+.sometxt {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 275px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #b2b2b2;
+    font-style: italic;
+    right: 67px;
+    text-transform: lowercase;
+    font-family: 'safety-DemiBold', sans-serif;
+
+
+}
+
+/*****SOCIALMEDIAICONS***/
+
+.insta {
+    background-image: url(imgs/Instagram-color.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 445px;
+    left: 121px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
+}
+
+.face {
+    background-image: url(imgs/Facebook-color.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+    bottom: 469px;
+    left: 158px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
+}
+
+.snap {
+    background-image: url(imgs/Snapchat-color.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 493px;
+    left: 192px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
+    fill: white;
+}
+
+/*****Social icons hover***/
+
+.insta:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.face:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.snap:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
