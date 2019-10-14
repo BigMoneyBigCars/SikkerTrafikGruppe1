@@ -216,7 +216,7 @@ h5 {
 }
 
 #desktop-menu a {
-    font-size: 1rem;
+    font-size: 0.62rem;
 
     color: white;
     text-transform: uppercase;
@@ -240,7 +240,7 @@ h5 {
 }
 
 #desktop-menu img {
-    height: 40px;
+    height: 30px;
     stroke-opacity: none;
 
 }
@@ -460,7 +460,7 @@ article {
 .question1-answer-container p,
 .question2-answer-container p,
 .question3-answer-container p {
-
+    font-family: 'safety-Light', sans-serif;
     width: 100%;
     text-align: left;
 }
@@ -821,7 +821,7 @@ footer .socials {
 
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:905px) {
 
     #mobile-menu {
         display: none;
@@ -830,6 +830,8 @@ footer .socials {
     #desktop-menu {
         display: flex
     }
+
+
 
     .path-menu-container {
         width: 65%;
@@ -875,6 +877,8 @@ footer .socials {
 }
 
 
+
+
 .svarfelt {
     width: 100%;
     min-height: 100px;
@@ -897,12 +901,36 @@ footer .socials {
 }
 
 
+@media only screen and (min-width: 1000px) {
+    #desktop-menu img {
+        height: 40px;
+    }
 
-@media only screen and (min-width: 1440px) {
+    #desktop-menu a {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
 
     .container-max,
     .footer-container {
         max-width: 1310px;
+    }
+
+    .desktop-menu-container {
+        width: 100%;
+    }
+
+    #desktop-menu a {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    #desktop-menu a {
+        font-size: 0.9rem;
     }
 
     .desktop-menu-container {
@@ -911,6 +939,12 @@ footer .socials {
 
 }
 
+@media only screen and (min-width: 1540px) {
+    #desktop-menu a {
+        font-size: 1rem;
+    }
+
+}
 
 
 @media only screen and (min-width: 2140px) {
