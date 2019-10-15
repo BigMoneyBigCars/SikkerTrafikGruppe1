@@ -561,6 +561,7 @@ button:hover {
     margin: 45px auto;
 
 
+
 }
 
 .diagram-container1 p,
@@ -573,6 +574,7 @@ button:hover {
 #diagram2,
 #diagram3 {
     fill: none;
+    transform: rotate(-90deg);
 
 }
 
@@ -737,6 +739,11 @@ footer.fa-linkedin {
     border-radius: 200%;
     border: 1px solid white;
 
+}
+
+text {
+    fill: black;
+    font-size: 7px;
 }
 
 footer .socials {

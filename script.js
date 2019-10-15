@@ -5,30 +5,49 @@
       // console.log("start page function")
   }
 
-  const v1 = [88, 3, 67];
+  const v1 = [88, 9, 67];
   const v2 = [75, 23, 8, 52];
   const v3 = [96, 11, 18, 33];
+
 
 
   const omkreds = Math.PI * 100;
 
   //  // console.log(omkreds, total, faktor);
 
-  function animer(values, diagram) {
+  function animer(values, diagram, diagrampercent) {
       const offset = [0];
       let total = 0;
-      values.forEach(v => total += v);
+      values.forEach(v => {
+          total += v
+      });
 
       const faktor = omkreds / total;
+      let procentArray = [];
 
       diagram.forEach((cirkel, i) => {
+
+
           //// console.log(cirkel, i)
           offset.push(values[i] + offset[i]);
-          // // console.log(offset);
+          // // console.log(offset);Math.round(num * 100) / 100
+          let procent = (values[i] / total * 100).toFixed(1);
+          console.log(procent);
+          procentArray.push(procent);
+
+
+          console.log(procentArray);
+
+          cirkel.setAttribute("data-percent", procent);
+
+
+          document.querySelectorAll("#" + diagrampercent + " text").forEach((text, i) => {
+              text.textContent = procentArray[i] + "%";
+          });
+
           cirkel.style.strokeDasharray = values[i] * faktor + " " + omkreds;
           cirkel.style.strokeDashoffset = -offset[i] * faktor;
       })
-      console.log(total);
   }
 
   document.querySelector(".button1").addEventListener("click", show1);
@@ -43,27 +62,29 @@
   function show1() {
       const diagram = document.querySelectorAll("#diagram1 circle");
 
+      const diagrampercent = "diagram1";
+
       document.querySelector(".diagram-container1").style.display = "block";
-      setTimeout(() => animer(v1, diagram), 100);
+      setTimeout(() => animer(v1, diagram, diagrampercent), 100);
 
   }
 
   function show2() {
 
       const diagram = document.querySelectorAll("#diagram2 circle");
-
+      const diagrampercent = "diagram2";
       document.querySelector(".diagram-container2").style.display = "block";
-
-      setTimeout(() => animer(v2, diagram), 100);
+      setTimeout(() => animer(v2, diagram, diagrampercent), 100);
 
   }
 
   function show3() {
       const diagram = document.querySelectorAll("#diagram3 circle");
+      const diagrampercent = "diagram3";
 
       document.querySelector(".diagram-container3").style.display = "block";
       //  setTimeout(animer3, 100);
-      setTimeout(() => animer(v3, diagram), 100);
+      setTimeout(() => animer(v3, diagram, diagrampercent), 100);
 
 
   }
